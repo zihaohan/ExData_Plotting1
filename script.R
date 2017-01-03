@@ -21,14 +21,14 @@ dev.off()
 
 
 ## plot2
-png("plot2.png", width = 450, height = 450)
+png("plot2.png", width = 480, height = 480)
 attach(addtime)
 plot(scale, Global_active_power, type = "l", xlab = NA, ylab = "Global Active Power (kilowatts)")
 dev.off()
 
 
 ##plot3
-png("plot3.png", width = 450, height = 450)
+png("plot3.png", width = 480, height = 480)
 plot(scale, Sub_metering_1, type = "l", col = "black", xlab="", ylab= "Energy sub metering")
 lines(scale, Sub_metering_2, col="red")
 lines(scale, Sub_metering_3, col="blue")
@@ -38,7 +38,7 @@ dev.off()
 names(addtime)
 
 ## plot4
-png("plot4.png", width = 450, height = 450)
+png("plot4.png", width = 480, height = 480)
 par(mfcol = c(2, 2))
 ##plot1
 hist(Global_active_power, col = "red", 
