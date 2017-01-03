@@ -13,11 +13,10 @@ addtime <- twoday %>% mutate(when = paste(Date, Time),
 ## plot4
 png("plot4.png", width = 450, height = 450)
 par(mfcol = c(2, 2))
+
 ##plot4.1
-hist(Global_active_power, col = "red", 
-     xlab = "Global Active Power (kilowatts)",
-     ylab = "Frequency",
-     main = "Global Active Power")
+plot(scale, Global_active_power, type = "l", xlab = NA, ylab = "Global Active Power (kilowatts)")
+
 ##plot4.2
 plot(scale, Sub_metering_1, type = "l", col = "black", xlab="", ylab= "Energy sub metering")
 lines(scale, Sub_metering_2, col="red")
