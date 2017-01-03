@@ -12,7 +12,7 @@ addtime <- twoday %>% mutate(when = paste(Date, Time),
 
 
 ##plot3
-png("plot3.png", width = 450, height = 450)
+png("plot3.png", width = 480, height = 480)
 plot(scale, Sub_metering_1, type = "l", col = "black", xlab="", ylab= "Energy sub metering")
 lines(scale, Sub_metering_2, col="red")
 lines(scale, Sub_metering_3, col="blue")
