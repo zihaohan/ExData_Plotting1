@@ -12,7 +12,7 @@ addtime <- twoday %>% mutate(when = paste(Date, Time),
 
 
 ## plot2
-png("plot2.png", width = 450, height = 450)
+png("plot2.png", width = 480, height = 480)
 attach(addtime)
 plot(scale, Global_active_power, type = "l", xlab = NA, ylab = "Global Active Power (kilowatts)")
 dev.off()
